@@ -16,7 +16,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cors());
 
 // Define routes
-const customerRoute = require("./routes/clients");
+const customerRoute = require("./routes/customerRoute");
 app.use("/api/v1/customer", customerRoute);
 
 const pointsRoutes = require("./routes/chickens");
