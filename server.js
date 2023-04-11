@@ -17,10 +17,10 @@ app.use(cors());
 
 // Define routes
 const customerRoute = require("./routes/customerRoute");
-app.use("/api/v1/customer", customerRoute);
+app.use("/api/v1/customers", customerRoute);
 
-const pointsRoutes = require("./routes/chickens");
-app.use("/api/v1/auth", pointsRoutes);
+const pointsRoutes = require("./routes/pointsRoute");
+app.use("/api/v1/points", pointsRoutes);
 
 app.get("/", (req, res) => {
   res.send({ message: "Dreamer Rest Api!" });
